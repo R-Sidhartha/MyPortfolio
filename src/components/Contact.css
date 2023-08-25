@@ -1,0 +1,41 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+  width: 68vw;
+  margin-top: 90px;
+}
+.contact-msg {
+  width: 40vw;
+}
+.contact-pic img {
+  height: 350px;
+}
+.socialmedia{
+    margin-top: 80px;
+}
+@media screen and (max-width:450px) {
+  .contact{
+
+    margin-top: 20px;
+  }
+
+}
+@media screen and (max-width: 1300px) {
+  .contact {
+    flex-direction: column;
+    width: 88vw;
+  }
+  .contact-pic img {
+    height: 80px;
+  }
+  .contact-msg {
+    width: 80vw;
+  }
+  .contact-img{
+    display: none;
+  }
+  .socialmedia{
+    margin-top: 20px;
+}
+}
+

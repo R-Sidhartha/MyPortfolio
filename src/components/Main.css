@@ -1,0 +1,144 @@
+.topheading{
+    font-family:'Lugrasimo';
+    font-size:25px;
+}
+.header{
+height: 120px;}
+.navbar {
+  padding: 0.5rem 5rem;
+}
+.navbar li {
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+.modepic {
+  height: 35px;
+  width: auto;
+  position: absolute;
+  right: 30px;
+  top: 41px;
+  cursor: pointer;
+  z-index: 200;
+}
+.main1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+.Intro-text {
+  margin: 0px 100px;
+}
+.Intro-img img {
+  width: 322px;
+  height: 490px;
+  border-radius: 30px;
+}
+.Introduction {
+  display: flex;
+  width: 88vw;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin-top: 40px;
+}
+.values {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98vw;
+  flex-direction: row;
+}
+.careerbox {
+  padding: 0px 25px;
+  text-align: justify;
+  height: 300px;
+  margin-top: 35px;
+}
+.main2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+.line {
+  height: 2px;
+  width: 67vw;
+  display: flex;
+  justify-content: space-between;
+}
+.vertical-line {
+  height: 30px;
+  width: 2px;
+}
+.career {
+  font-family: "Rosarivo", serif;
+  text-align: center;
+}
+.card-title {
+  font-family: "Rosarivo", serif;
+}
+.tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 85px;
+}
+.skills {
+  display: grid;
+  width: 90vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 30px;
+}
+.skill {
+  display: flex;
+  width: 90vw;
+  align-items: center;
+  margin: 30px 5px;
+}
+.card {
+  /* background-color: #bef0f8; */
+  width: 22rem;
+}
+.text {
+  font-family: "Nunito", sans-serif;
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.card-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+.pic {
+  width: 105px;
+  height: 100px;
+}
+.default-pic {
+  width: 90px;
+  height: 100px;
+}
+.background-pic {
+  position: relative; /* Ensure relative positioning for contained absolute positioned image */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Height will adjust according to image aspect ratio */
+  overflow: hidden; /* Hide any overflowing content */
+
+  /* Set the image as the background */
+  background-image: url("./pics/mypic1.jpg");
+  background-size: cover; /* Cover the entire container */
+  background-position: center center; /* Center the image horizontally and vertically */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+}
+.topIntro {
+  margin-top: 180px;
+  margin-left: 760px;
+}
+.typedtext {
+  font-size: 40px;
+}

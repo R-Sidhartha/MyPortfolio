@@ -1,24 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import { useState } from "react";
 
 function App() {
+  const key='mode';
+  const value=localStorage.getItem(key)
+  // const[alert,setalert]=useState(null)
+  const[mode,setMode]=useState(()=>{
+    if (value==='light'|| value===null) {
+      return 'dark'
+    }
+    return 'light'
+  }) // Set initial mode to "light" if no value found in local storage
+  const[color,setcolor]=useState("black") // Set initial color to "black" if no value found in local storage
+
+  document.body.style.backgroundColor=value==='dark'?'#060a14':'white'
+
+  const darkmode=(e)=>{
+    e.preventDefault()
+    if (mode==='light') {
+      setMode("dark")
+      document.body.style.backgroundColor="white"
+      setcolor('black')
+      // showalert('light mode is enabled','success')
+    }
+    else{
+      setMode('light')
+      document.body.style.backgroundColor='#060a14' 
+      setcolor('white')
+      // showalert('dark mode is enabled','success')
+    }
+    localStorage.setItem("mode",mode)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Header mode={mode} darkmode={darkmode}/>
+        <Routes>
+          <Route exact path="/projects" element={<Projects color={color} mode={mode}/>}/>
+        {/* </Routes>
+        <Routes> */}
+          <Route exact path="/" element={<Main color={color} mode={mode}/>}/>
+          <Route exact path="/about" element={<About color={color} mode={mode}/>}/>
+          <Route exact path="/contact" element={<Contact color={color} mode={mode}/>}/>
+        </Routes>
+        <Footer />
+      </Router>
+      {/* <Projects/> */}
+    </>
   );
 }
 
