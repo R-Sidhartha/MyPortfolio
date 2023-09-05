@@ -21,7 +21,7 @@ function App() {
   }) // Set initial mode to "light" if no value found in local storage
   const[color,setcolor]=useState("black") // Set initial color to "black" if no value found in local storage
 
-  document.body.style.backgroundColor=value==='dark'?'#060a14':'white'
+  document.body.style.backgroundColor=value==='dark'?'black':'white'
 
   const darkmode=(e)=>{
     e.preventDefault()
@@ -33,7 +33,7 @@ function App() {
     }
     else{
       setMode('light')
-      document.body.style.backgroundColor='#060a14' 
+      document.body.style.backgroundColor='black' 
       setcolor('white')
       // showalert('dark mode is enabled','success')
     }
@@ -51,7 +51,7 @@ function App() {
           <Route exact path="/about" element={<About color={color} mode={mode}/>}/>
           <Route exact path="/contact" element={<Contact color={color} mode={mode}/>}/>
         </Routes>
-        <Footer />
+        <Footer mode={mode}/>
       </Router>
       {/* <Projects/> */}
     </>

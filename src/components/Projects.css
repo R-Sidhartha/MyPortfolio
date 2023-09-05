@@ -1,106 +1,114 @@
-.projectsPage{
-  width: 100vw;
-        display: flex;
-        flex-direction: column;
-        min-height: 140vh;
-        margin-top:90px
+/* .projectsPage {
+  width: 98vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+} */
+.project {
+  width: 98vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin-top: 50px;
 }
-.project{
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
-}
-.project-card{
-  margin: 75px 50px;
+.project-card {
   width: 52rem;
 }
-.projects{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 50px;
-  width: 100vw;
+.projectcards{
+  margin: 45px 10px;
+  width: 30rem;
+}
+.projects {
+  margin-top: 140px;
 }
 
-.slide{
+.slide {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.details{
-    width: 95vw;
-    text-align: center;
+.details {
+  width: 95vw;
+  text-align: center;
 }
-.used img{
-    margin: 0px 20px;
+.used img {
+  margin: 0px 20px;
 }
-.usedtools{
+.usedtools {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 15px;
 }
-.card-text{
-  font-family: 'Roboto', sans-serif;
+.card-text {
+  font-family: "Roboto", sans-serif;
 }
-.title{
-  font-family: 'Rosarivo', serif;
+.title {
+  font-family: "Rosarivo", serif;
 }
-.project-text{
-  font-family: 'Nunito', sans-serif;
+.project-text {
+  font-family: "Nunito", sans-serif;
 }
-.visit{
+.visit {
   margin: 10px 0px;
 }
-.visit a{
+.visit a {
   color: #5e97ef;
   text-decoration: underline;
 }
-@media screen and (max-width: 700px){
-  .projectsPage{
-    margin-top:20px
+@media screen and (max-width: 700px) {
+  .projects{
+    margin-top: 80px;
   }
-.project{
+  .projectcards{
+    margin: 45px 10px;
+    width: 23rem;
+  }
+  .projectsPage {
+    margin-top: 20px;
+  }
+  .project {
     flex-direction: column-reverse;
-width: 100vw;
-margin-top: 25px;
+    width: 100vw;
+    margin-top: 25px;
   }
-  .details{
+  .details {
     width: 90vw;
     text-align: center;
   }
-  .used{
+  .used {
     grid-template-columns: 1fr 1fr 1fr;
-}
-  .used img{
+  }
+  .used img {
     margin: 5px 10px;
   }
-  .project-card{
+  .project-card {
     margin: 0px 20px;
     width: 24rem;
   }
-  .manualpopover{
+  .manualpopover {
     width: 90vw;
   }
-  .usedtools{
+  .usedtools {
     display: block;
   }
 }
 @media screen and (max-width: 1300px) and (min-width: 450px) {
-  .project{
+  .project {
     flex-direction: column-reverse;
-width: 100vw;
-margin-top: 25px;
+    width: 100vw;
+    margin-top: 25px;
   }
-  .details{
+  .details {
     width: 90vw;
     text-align: center;
   }
-  .used{
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-}
-.project-card{
-  width: 24rem;
-}
+  .used {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .project-card {
+    width: 24rem;
+  }
 }

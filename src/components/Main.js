@@ -10,7 +10,7 @@ import Reactpng from "./pics/reactpic.png";
 import Nodejspng from "./pics/nodejs png.png";
 import MongoDbpng from "./pics/mongodbimg.png";
 import expresspic from "./pics/expressimg.png";
-import mypic from "./pics/DSC_5041-01.jpeg";
+import mypic from "./pics/mypic.jpg";
 import deployimg from "./pics/deployimg.png";
 import gitimg from "./pics/gitimg.png";
 import Resume from "./Resume";
@@ -18,22 +18,20 @@ import Resume from "./Resume";
 export default function Main(props) {
  
   const inputstyle = {
-    background: `${props.mode !== "dark" ? "#060a14" : "white"}`,    color: `${props.mode === "dark" ? "black" : "white"}`,
+    background: `${props.mode !== "dark" ? "black" : "white"}`,    color: `${props.mode === "dark" ? "black" : "white"}`,
   };
   return (
     <>
       <div className="background-pic img-fluid">
         <div className="topIntro">
           <h2>Welcome,</h2>
-          <h2>I am R Sidhartha</h2>
+          <h1>I am R Sidhartha</h1>
           <div>
             <Typed
               strings={[
                 "Web Developer !",
-                "Web Designer ",
-                "Full Stact Developer !",
-                "Responsive Software Developer !",
-                "Web Enthusiast !"
+                "Web Designer !",
+                "Full Stack Developer !",
               ]}
               typeSpeed={40}
               backSpeed={50}
@@ -41,13 +39,6 @@ export default function Main(props) {
               className="typedtext"
             />
             <br />
-          </div>
-          <div className="quote my-3">
-            <b>
-              "Think of your career as a canvas for your dreams. Every step you
-              take is a stroke of dedication, resilience, and passion. Together,
-              they create the beautiful journey of your life."
-            </b>
           </div>
           <div className="resume my-3">
             <p style={{fontFamily:'lato',fontSize:'20px'}}>Have a look at my Resume</p>
@@ -188,7 +179,7 @@ export default function Main(props) {
               <h2 className="career">Technical Proficiencies</h2>
             </div>
             <div className="skills">
-              <div className="card align-items-center"  style={inputstyle}>
+              <div className="card align-items-center card-main"  style={inputstyle}>
                 <img className="pic card-img-top" src={HtmlImg} alt="..." />
                 <div className="card-body">
                   <h5 className="card-title text-center">HTML</h5>
@@ -201,7 +192,7 @@ export default function Main(props) {
                   </p>
                 </div>
               </div>
-              <div className="card align-items-center" style={inputstyle}>
+              <div className="card align-items-center card-main" style={inputstyle}>
                 <img className="pic card-img-top" src={csspic} alt="..." />
                 <div className="card-body">
                   <h5 className="card-title text-center">CSS</h5>
@@ -214,7 +205,7 @@ export default function Main(props) {
                   </p>
                 </div>
               </div>
-              <div className="card align-items-center" style={inputstyle}>
+              <div className="card align-items-center card-main" style={inputstyle}>
                 <img className="pic card-img-top" src={Jspic} alt="..." />
                 <div className="card-body">
                   <h5 className="card-title text-center">JavaScript</h5>
@@ -226,7 +217,7 @@ export default function Main(props) {
                   </p>
                 </div>
               </div>
-              <div className="card align-items-center" style={inputstyle}>
+              <div className="card align-items-center card-main" style={inputstyle}>
                 <img className="pic card-img-top" src={Reactpng} alt="..." />
                 <div className="card-body">
                   <h5 className="card-title text-center">React</h5>
@@ -239,7 +230,7 @@ export default function Main(props) {
                   </p>
                 </div>
               </div>
-              <div className="card align-items-center" style={inputstyle}>
+              <div className="card align-items-center card-main" style={inputstyle}>
                 <img
                   className="default-pic card-img-top"
                   src={BootstrapImg}
@@ -255,7 +246,7 @@ export default function Main(props) {
                   </p>
                 </div>
               </div>
-              <div className="card align-items-center" style={inputstyle}>
+              <div className="card align-items-center card-main" style={inputstyle}>
                 <img
                   className="pic card-img-top "
                   src={Nodejspng}
@@ -273,7 +264,7 @@ export default function Main(props) {
                   </p>
                 </div>
               </div>
-              <div className="card align-items-center" style={inputstyle}>
+              <div className="card align-items-center card-main" style={inputstyle}>
                 <img
                   className="pic card-img-top"
                   src={MongoDbpng}
@@ -291,7 +282,7 @@ export default function Main(props) {
                   </p>
                 </div>
               </div>
-              <div className="card align-items-center" style={inputstyle}>
+              <div className="card align-items-center card-main" style={inputstyle}>
                 <img
                   className="pic card-img-top"
                   src={expresspic}
@@ -317,8 +308,8 @@ export default function Main(props) {
                 </p>
               </div>
             </div> */}
-              <div className="card align-items-center" style={inputstyle}>
-                <img className="pic card-img-top" src={gitimg} alt="..." />
+              <div className="card align-items-center card-main" style={inputstyle}>
+                <img className="pic card-img-top" src={gitimg} alt="..." style={{background:'white'}}/>
                 <div className="card-body">
                   <h5 className="card-title text-center">Git</h5>
                   <p className="card-text ">
@@ -330,7 +321,7 @@ export default function Main(props) {
                   </p>
                 </div>
               </div>
-              <div className="card align-items-center" style={inputstyle}>
+              <div className="card align-items-center card-main" style={inputstyle}>
                 <img className="pic card-img-top" src={deployimg} alt="..." />
                 <div className="card-body">
                   <h5 className="card-title text-center">Deployment</h5>

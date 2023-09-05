@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Footer() {
+export default function Footer(props) {
   return (
-    <div className="card text-center " style={{background:'#343a40',color:'white',width:'100vw',marginTop:'20px'}}>
+    <div className="card text-center " style={{background:`${props.mode==='light'?'black':'white'}`,color:`${props.mode==='light'?'white':'black'}`,marginTop:'60px',overflow:'hidden'}}>
   <div className="card-header">
     Featured
   </div>

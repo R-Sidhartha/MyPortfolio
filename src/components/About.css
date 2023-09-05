@@ -35,6 +35,9 @@
       display: block;
       object-fit: cover;
     }
+    .about-card{
+      width: 23rem;
+    }
     .card-title{
       font-family: 'Rosarivo', serif;
   }
@@ -64,6 +67,7 @@
   }  
   .services{
         flex-direction: column;
+        align-items: center;
     }
     .card{
         flex-direction: column;

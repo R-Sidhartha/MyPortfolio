@@ -25,7 +25,7 @@ import "./Projects.css";
 
 export default function Projects(props) {
   const inputstyle = {
-    background: `${props.mode !== "dark" ? "#060a14" : "white"}`,
+    background: `${props.mode !== "dark" ? "black" : "white"}`,
     color: `${props.mode === "dark" ? "black" : "white"}`,
   };
   return (
@@ -35,7 +35,7 @@ export default function Projects(props) {
         color: `${props.mode === "dark" ? "black" : "white"}`,
       }}
     >
-      <div className="projects" style={{ gridTemplateColumns: "1fr" }}>
+      <div className="projects" >
         <div className="project">
           <div className="card project-card " style={inputstyle}>
             <div
@@ -95,8 +95,8 @@ export default function Projects(props) {
           </div>
         </div>
         <div className="project">
-          <div className="level2projects d-flex" style={{ width: "100vw" }}>
-            <div className="card project-card " style={inputstyle}>
+          <div className="level2projects d-flex" >
+            <div className="card projectcards" style={inputstyle}>
               <div
                 id="carouselExampleFade"
                 className="carousel slide carousel-fade"
@@ -145,7 +145,7 @@ export default function Projects(props) {
                 </div>
               </div>
             </div>
-            <div className="card project-card " style={inputstyle}>
+            <div className="card projectcards" style={inputstyle}>
               <div
                 id="carouselExampleFade"
                 className="carousel slide carousel-fade"
@@ -187,7 +187,7 @@ export default function Projects(props) {
                 </div>
               </div>
             </div>
-            <div className="card project-card " style={inputstyle}>
+            <div className="card projectcards" style={inputstyle}>
               <div
                 id="carouselExampleFade"
                 className="carousel slide carousel-fade"

@@ -12,7 +12,7 @@ import "./About.css";
 
 export default function About(props) {
   const inputstyle = {
-    background: `${props.mode !== "dark" ? "#060a14" : "white"}`,
+    background: `${props.mode !== "dark" ? "black" : "white"}`,
     color: `${props.mode === "dark" ? "black" : "white"}`,
   };
   return (
@@ -23,7 +23,7 @@ export default function About(props) {
     >
       <h3 className="text-center title aboutpage">What Can i DO ?</h3>
       <div className="services my-4">
-        <div className="card align-items-center" style={inputstyle}>
+        <div className="card align-items-center about-card" style={inputstyle}>
           <div className="cardimg">
             <img src={Fastpic} className="card-img-top" alt="..." />
           </div>
@@ -35,7 +35,7 @@ export default function About(props) {
             </p>
           </div>
         </div>
-        <div className="card align-items-center" style={inputstyle}>
+        <div className="card align-items-center about-card" style={inputstyle}>
           <div className="cardimg">
             <img src={Intuitiveimg} className="card-img-top" alt="..." />
           </div>
@@ -47,7 +47,7 @@ export default function About(props) {
             </p>
           </div>
         </div>
-        <div className="card align-items-center" style={inputstyle}>
+        <div className="card align-items-center about-card" style={inputstyle}>
           <div className="cardimg">
             <img src={Responsiveimg} className="card-img-top" alt="..." />
           </div>
@@ -59,7 +59,7 @@ export default function About(props) {
             </p>
           </div>
         </div>
-        <div className="card align-items-center" style={inputstyle}>
+        <div className="card align-items-center about-card" style={inputstyle}>
           <div className="defaultcardimg">
             <img src={Dynamicpic} className="card-img-top" alt="..." />
           </div>
@@ -71,7 +71,7 @@ export default function About(props) {
             </p>
           </div>
         </div>
-        <div className="card align-items-center" style={inputstyle}>
+        <div className="card align-items-center about-card" style={inputstyle}>
           <div className="defaultcardimg">
             <img src={Seopic} className="card-img-top" alt="..." />
           </div>
@@ -83,7 +83,7 @@ export default function About(props) {
             </p>
           </div>
         </div>
-        <div className="card align-items-center" style={inputstyle}>
+        <div className="card align-items-center about-card" style={inputstyle}>
           <div className="cardimg">
             <img
               src={Reactsinglepage}
@@ -106,7 +106,7 @@ export default function About(props) {
             </p>
           </div>
         </div>
-        <div className="card align-items-center" style={inputstyle}>
+        <div className="card align-items-center about-card" style={inputstyle}>
           <div className="cardimg">
             <img
               src={Backendpic}
@@ -125,10 +125,10 @@ export default function About(props) {
           </div>
         </div>
       </div>
-        <h3 className="card-title text-center"style={{marginTop:'50px'}}>Into My World: Personal Insights and Details </h3>
+        <h3 className="card-title text-center"style={{marginTop:'100px'}}>Into My World: Personal Insights and Details </h3>
       <div className="about d-flex justify-content-center align-items-center" style={{marginTop:'25px'}}>
         <div
-          className="card align-items-center"
+          className="card align-items-center about-card"
           style={{ margin: "10px 100px", ...inputstyle ,border:'none'}}
         >
           <div className="cardimg" style={{ height: "550px", width: "400px" }}>
