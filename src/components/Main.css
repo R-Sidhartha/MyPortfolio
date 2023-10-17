@@ -104,11 +104,29 @@ height: 120px;}
   /* background-color: #bef0f8; */
   width: 22rem;
 }
+
 .text {
   font-family: "Nunito", sans-serif;
   text-align: justify;
   margin-top: 10px;
   font-size: 15px;
+}
+.footer-text {
+  font-family: "Nunito", sans-serif;
+  margin-top: 10px;
+  font-size: 17px;
+}
+.footer{
+  height: 350px;
+}
+.horizontal-line{
+  height: 220px;
+}
+.footer-links{
+  flex-direction: column;
+}
+.footer-right{
+  width: 54vw;
 }
 .card-text {
   font-family: "Roboto", sans-serif;
@@ -130,7 +148,7 @@ height: 120px;}
   overflow: hidden; /* Hide any overflowing content */
 
   /* Set the image as the background */
-  background-image: url("./pics/mypic5.jpg");
+  background-image: url("./pics/portfoliobg.jpg");
   background-size: cover; /* Cover the entire container */
   background-position: center center; /* Center the image horizontally and vertically */
   background-repeat: no-repeat; /* Prevent image from repeating */

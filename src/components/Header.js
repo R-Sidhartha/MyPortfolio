@@ -44,7 +44,7 @@ export default function Header(props) {
         ${(isMobile || istab) && isMenuExpanded ? 'bg-dark' : 'bg-transparent'} header`}
         style={{ position: "absolute", top: "0", width: `${isMobile || istab ? '100vw' : '97vw'}`, zIndex: "110", height:`${istab && isMenuExpanded ? '360px':""}`}}
       >
-        <Link className="navbar-brand topheading" to="/" style={{color: location.pathname === "/" ? 'rgb(92, 178, 157)':( `${props.mode !== "dark" ? "rgb(92, 178, 157)" : "rgb(29, 105, 86)"}`)}}>
+        <Link className="navbar-brand topheading" to="/" style={{color: location.pathname === "/" ? '#0a1f2f':( `${props.mode !== "dark" ? "rgb(92, 178, 157)" : "#0a1f2f"}`)}}>
          Sidharth's &nbsp; Portfolio
         </Link>
         <button
@@ -100,7 +100,7 @@ export default function Header(props) {
                 src={props.mode === "light" ? lightmode : darkmode}
                 alt=""
                 className="modepic"
-                style={{background:`${location.pathname === "/" && props.mode==='dark' ?'white' : ''}`}}
+                
               />
       </nav>
     </div>

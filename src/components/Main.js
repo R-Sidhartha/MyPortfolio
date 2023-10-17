@@ -24,8 +24,8 @@ export default function Main(props) {
     <>
       <div className="background-pic img-fluid">
         <div className="topIntro">
-          <h2>Welcome,</h2>
-          <h1>I am R Sidhartha</h1>
+          <h2>&lt;Welcome /&gt;</h2>
+          <h1>&lt;I am R Sidhartha /&gt;</h1>
           <div>
             <Typed
               strings={[

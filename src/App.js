@@ -12,7 +12,6 @@ import { useState } from "react";
 function App() {
   const key='mode';
   const value=localStorage.getItem(key)
-  // const[alert,setalert]=useState(null)
   const[mode,setMode]=useState(()=>{
     if (value==='light'|| value===null) {
       return 'dark'
@@ -29,13 +28,11 @@ function App() {
       setMode("dark")
       document.body.style.backgroundColor="white"
       setcolor('black')
-      // showalert('light mode is enabled','success')
     }
     else{
       setMode('light')
       document.body.style.backgroundColor='black' 
       setcolor('white')
-      // showalert('dark mode is enabled','success')
     }
     localStorage.setItem("mode",mode)
   }
@@ -45,15 +42,12 @@ function App() {
         <Header mode={mode} darkmode={darkmode}/>
         <Routes>
           <Route exact path="/projects" element={<Projects color={color} mode={mode}/>}/>
-        {/* </Routes>
-        <Routes> */}
           <Route exact path="/" element={<Main color={color} mode={mode}/>}/>
           <Route exact path="/about" element={<About color={color} mode={mode}/>}/>
           <Route exact path="/contact" element={<Contact color={color} mode={mode}/>}/>
         </Routes>
         <Footer mode={mode}/>
       </Router>
-      {/* <Projects/> */}
     </>
   );
 }

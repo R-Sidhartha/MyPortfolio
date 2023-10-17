@@ -131,7 +131,7 @@ export default function About(props) {
           className="card align-items-center about-card"
           style={{ margin: "10px 100px", ...inputstyle ,border:'none'}}
         >
-          <div className="cardimg" style={{ height: "550px", width: "400px" }}>
+          <div className="cardimg" style={{ height: "550px", width: "385px" }}>
             <img src={mypic2} className="card-img-top" alt="..." />
           </div>
           <div className="card-body">

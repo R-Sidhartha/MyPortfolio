@@ -146,7 +146,6 @@ export default function Projects(props) {
                 <div className="usedtools">
                   <img src={Reactpng} alt="" style={{ width: "50px" }} />
                   <img src={BootstrapImg} alt="" style={{ width: "50px" }} />
-                  <img src={JSImg} alt="" style={{ width: "90px" }} />
                   <img src={ExternalApi} alt="" style={{ width: "50px" }} />
                 </div>
               </div>
@@ -482,7 +481,7 @@ export default function Projects(props) {
               <img src={expresspic} alt="" style={{ width: "150px" }} />
                 <img src={Reactpng} alt="" style={{ width: "50px" }} />
                 <img src={Nodejspng} alt="" style={{ width: "80px" }} />
-                <img src={openaipng} alt="" style={{ width: "100px" }} />
+                <img src={openaipng} alt="" style={{ width: "100px",background: `${props.mode === "dark" ? "white" : "white"}` }} />
                 <img src={BootstrapImg} alt="" style={{ width: "50px" }} />
               </div>
             </div>
